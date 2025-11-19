@@ -1,0 +1,54 @@
+name: verilock_mobile_v2
+description: "Flutter App for Verilock Raspberry Pi"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  crypto: ^3.0.3
+  cupertino_icons: ^1.0.8
+  http: ^1.5.0
+  http_parser: ^4.0.2
+  flutter_dotenv: ^6.0.0
+  permission_handler: ^12.0.1
+  camera: ^0.11.3
+  record: ^6.1.2
+  audioplayers: ^6.5.1
+  path_provider: ^2.1.5
+  speech_to_text: ^7.3.0
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/logo.jpg
+
+flutter_native_splash:
+  # This is the navy blue background color.
+  color: "#001F54"
+
+  # This is your centered logo.
+  image: assets/logo.jpg
+
+  # This configures the logo for modern Android versions.
+  android_12:
+    image: assets/logo.jpg
+    color: "#001F54"
+
+  # Basic flags to enable the splash screen.
+  android: true
+  ios: true
